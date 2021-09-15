@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page Project">
+    <meta name="author" content="Shawn Marcus">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BOOKit Travel</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BOOK<em>it</em></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Hogwarts.jpeg" alt="">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Hedwig running late with that letter?</h1>
+                            <p>Don't worry, we can help you find your way to an invisible platform and a magical world!
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Platform 9 and 3/4</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="white rabbit.jpeg" alt="" class="img-fluid">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Tea is served.</h1>
+                            <p><strong>Keep your wits or a murderous monarch will be <em>off with your
+                                        head!</em></strong></p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Down the Rabbit Hole</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="shire2.jpeg" alt="">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Let's be honest, they had us at <em>second breakfast</em>.</h1>
+                            <p>One part adventure and one part cookbook. Plus, maybe you'll find out why you can't walk
+                                into Mordor!</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">This Way to Middle Earth</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container marketing">
+
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="bookcafe.jpeg" alt="" class="img-thumbnail">
+
+                    <h2>Book Nook Caf&eacute;</h2>
+                    <p>Enjoy some hot cocoa after you've <em>booked</em> your latest trip.</p>
+                    <p><a class="btn btn-secondary" href="#">Menu Options &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="internet.jpeg" alt="" class="img-thumbnail">
+
+                    <h2>Meeting Space</h2>
+                    <p>Need a special spot to host clients, or a laptop and a nook for a school project?</p>
+                    <p><a class="btn btn-secondary" href="#">Reservations &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="42.jpeg" alt="" class="img-thumbnail">
+
+                    <h2>Questions?</h2>
+                    <p>Ask any one of our friendly staff members. They have an answer for <em>everything</em>.</p>
+                    <p><a class="btn btn-secondary" href="#">Contact Us &raquo;</a></p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Looking for Music? <span class="text-muted">We can lend an
+                            ear!</span></h2>
+                    <p class="lead">We have a wide selection of music media.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="music.jpeg" alt="" class="img-thumbnail">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Reading not your thing? <span class="text-muted">Check out our
+                            DVD's!</span></h2>
+                    <p class="lead">Did you know the average copy of <em>War and Peace</em> is over 1,200 pages long. Or
+                        you could watch the DVD in just over three hours. The choice is yours. We won't judge you.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="dvd.jpeg" alt="" class="img-thumbnail">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Of course we have books! <span class="text-muted">We are a
+                            <em>library</em> after all.</span></h2>
+                    <p class="lead">Okay, bad news first. We don't actually offer great deals on vacations to far off
+                        lands. We specialize in books. <em>Lots</em> of 'em.</p>
+                    <p class="lead">So <em>BOOK</em> your selection today!
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="books.jpeg" alt="" class="img-thumbnail">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2021 <span class="h4" id="george">Vandelay Industries</span> &middot; <a href="#">Privacy</a>
+                &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
